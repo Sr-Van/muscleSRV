@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aviso</title>
+    <style>
+        #balao-flutuante {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f1c40f;
+            width: auto;
+            max-width: 300px;
+            padding: 10px;
+            text-align: center;
+            z-index: 9999;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            }
+
+        #balao-flutuante:before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            background-color: #f1c40f;
+            width: 20px;
+            height: 20px;
+            z-index: -1;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            }
+
+        #balao-flutuante .mensagem-balao {
+            display: none;
+            font-weight: bold;
+            color: #333;
+            }
+
+        #balao-flutuante:hover .mensagem-balao {
+            display: inline;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div id="balao-flutuante">
+        <span class="mensagem-balao">Site feito no intuito de ajudar repassando conhecimento sobre musculação, não sou nutricionista nem treinador! Tudo que você encontrar no site pode estar errado, é por sua conta em risco.</span>
+    </div>
+      
+      
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // código opcional para animar o balão ao ser exibido
+        $('#balao-flutuante').hide().fadeIn(1000);
+        });
+
+</script>
+</html>

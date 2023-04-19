@@ -1,0 +1,109 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+    
+    
+body{
+    background-color: #07071f;
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 0 3em 0 3em;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+
+    background-image: linear-gradient(to bottom, #1c8be6, #07071f);
+}
+
+.header h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 100px;
+    transition: all 0.1s ease-in-out;
+}
+
+.header h1:hover{
+    font-size: 150px;
+}
+#balao-flutuante {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1c40f;
+    opacity: 50%;
+    width: auto;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#balao-flutuante:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #f1c40f;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+#balao-flutuante:hover{
+    opacity: 100%;
+}
+
+
+#balao-flutuante .mensagem-balao {
+    display: none;
+    font-weight: bold;
+    color: #333;
+}
+
+#balao-flutuante:hover .mensagem-balao {
+    opacity: 100%;
+    display: inline;
+}
+
+.widget-insta{
+    height: 450px;
+}
+
+.posts-insta{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    grid-template-columns: 4;
+    flex-wrap: wrap;
+}
+
+.scroll-show{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.scroll-show.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main2{
+    height: 100vh;
+    background-color: white;
+}
