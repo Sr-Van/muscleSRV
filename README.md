@@ -9,5 +9,5 @@
   
 * At the start i just wanted some guys workout like cbum, ramon, ronnie etc. But as long i was coding on it, i wanted more content on my site, so a started to learn more and add more, but stopped right here.
   
-* i'll be back on that project one day.
+* i'll be back on that project one day. 🔙
 
